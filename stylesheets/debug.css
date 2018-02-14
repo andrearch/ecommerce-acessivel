@@ -1,0 +1,56 @@
+body.debug .sr-only {
+  border-color: #CCCCFF;
+  background: #EEEEFF;
+  margin: 1em 0 1.5em 0;
+  padding: 2px 3px;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  color: #555;
+}
+
+body.debug [aria-hidden] {
+  border-color: #FFEEEE;
+  background: #FFCCCC;
+  margin: 1em 0 1.5em 0;
+  padding: 2px 3px;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  color: #555;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+body.debug [role] {
+  border-color: #FFCCCC;
+  border-style: solid;
+  border-width: 5px 1px;
+  padding: 3px 0;
+}
+body.debug [role]::before {
+  background: none repeat scroll 0 0 #EEEEFF;
+  border-left: 5px solid #BBBBDD;
+
+  content: attr(role);
+  margin: 0 0 0 auto;
+  display: table;
+  
+  font-weight: bold;
+  color: #000;
+}
+
+body.debug [itemprop] {
+  border-radius: 6px;
+
+  background:#e3f7fc;
+  border:1px solid #8ed9f6;
+}
+body.debug [itemprop]::before {
+  content: attr(itemprop) !important;
+  font-weight:bold;
+}
+body.debug [itemprop]:hover::before {
+  background: #0076A3;
+  color: #FFFFFF;
+  content: attr(itemprop);
+  text-decoration: underline;
+}

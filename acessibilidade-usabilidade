@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>
+      
+        Acessibilidade e Usabilidade — 
+      
+      Loja da Andrea
+    </title>
+
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/flexboxgrid-6.3.1.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/debug.css' />
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600|Poppins:300|Raleway:300,400" rel="stylesheet"> 
+  </head>
+
+  <body> <!-- class="debug" -->
+    
+    <h1><a href="/">Loja da Andrea</a></h1>
+
+    <aside id="barra_acessibilidade">
+  <a 
+
+  href="javascript:void(0)" id="ini-barra-acessibilidade" class="sr-only">
+    Marcador - Início da barra de acessibilidade<br>
+</a>
+<a href="#fim-barra-acessibilidade" class="sr-only">
+    Pular barra de acessibilidade
+</a>
+  
+  <div class="sr-only">
+    <h2>Barra de Acessibilidade</h2>
+        <h3>Atalhos de acessibilidade</h3>
+        <ul>
+            <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
+            <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
+            <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
+        </ul>
+  </div>
+  
+  <h3 class="sr-only">Outras opções</h3>
+
+  <ul id="menu-acessibilidade" class="row lista">
+    <li class="col-sm-4"><a href="/acessibilidade-usabilidade" class="icomoon iconmoon-wheelchair">Acessibilidade e usabilidade</a></li>
+    <li class="col-sm-4"><a href="/mapa" class="icomoon iconmoon-sitemap">Mapa do <span lang="en">site</span></a></li>
+    <li class="col-sm-4"><a class="icomoon iconmoon-adjust" href="javascript:void(0)" id="contraste">Alto Contraste</a></li>
+  </ul>
+  
+  <a href="javascript:void(0)" id="fim-barra-acessibilidade" class="sr-only">Marcador - Fim da barra de acessibilidade</a>
+</aside>
+
+    <nav id="breadcrumb" aria-labelledby="header-breadcrumb" 
+
+  >
+  <h2 id="header-breadcrumb" class="sr-only">Você está em:</h2>
+
+  <ol class="breadcrumb">
+    
+    <li>
+      
+        <a href="/">
+      
+        Página inicial
+        
+      </a>
+      
+    </li>
+    
+    <li>
+      
+        Acessibilidade e usabilidade
+        
+    </li>
+    
+  </ol>
+</nav>
+
+    <main id="acessibilidade">
+      <a 
+
+  accesskey=1
+
+  href="javascript:void(0)" id="ini-conteudo" class="sr-only">
+    Marcador - Início do conteúdo<br>
+</a>
+<a href="#fim-conteudo" class="sr-only">
+    Pular conteúdo
+</a>
+
+      <header>
+  <h2>Acessibilidade e Usabilidade</h2>
+</header>
+
+<p>
+  Acreditamos que a informação, maior patrimônio da humanidade, deve estar sempre
+  acessível todos! Seguindo esta ideia, nossa equipe de desenvolvimento
+  tentou deixar o sítio o máximo acessível.
+</p>
+<p>
+  Abaixo algumas informações importantes acerca da acessibilidade deste portal.
+</p>
+
+
+<aside>
+  <h3>Lista de categorias</h3>
+  <ol>
+    <li><a href="#acessibilidade-problema">Ocorreu algum problema?</a></li>
+    <li>
+      <a href="#acessibilidade-navegador">Pedido: Use sempre um navegador atualizado</a>
+      <ol>
+        <li><a href="#acessibilidade-navegador-pc">Computadores Pessoais</a></li>
+        <li><a href="#acessibilidade-navegador-portateis">Dispositivos portáteis</a></li>
+      </ol>
+    </li>
+    <li><a href="#acessibilidade-teclas">Teclas de atalho</a>
+      <ol>
+        <li><a href="#acessibilidade-teclas-disponiveis">Atalhos de teclado disponíveis</a></li>
+        <li><a href="#acessibilidade-teclas-tecla">Tecla de atalho</a></li>
+      </ol>
+    </li>
+    <li><a href="#acessibilidade-contraste">Alto contraste</a></li>
+    
+  </ul>
+</aside>
+
+
+<h3 id="acessibilidade-problema">Ocorreu algum problema?</h3>
+<p>
+  Por mais que nos esforçamos para deixar tudo em ordem, por vezes algo passa
+  despercebido, como:
+</p>
+<ul>
+  <li>Determinado conteúdo inacessível;</li>
+  <li>links com problema, mandando para endereços errados ou para nenhum lugar;</li>
+  <li>informação confusa, seja pelo conteúdo ou sua disposição;</li>
+  <li>problemas similares.</li>
+</ul>
+<p>
+  Caso se depare com algum destes problemas, mande um e-mail para 
+  <a href="mailto:deyach@gmail.com">deyach@gmail.com</a>.
+</p>
+<p>
+  Aguardamos sua colaboração!
+</p>
+
+
+<h3 id="acessibilidade-navegador">Pedido: Use sempre um navegador atualizado</h3>
+<p>
+  O sítio foi feito em cima das especificações que o <abbr title="Consórcio World Wide Web">W3C</abbr>
+  fez para as tecnologias web (HTML 5, CSS 3 e Javascript), sendo que alguma destas
+  visam melhorar a usabilidade e a acessibilidade das páginas web.
+</p>
+
+<p>
+  Mas nem todas as especificações foram finalizadas. E os navegadores,
+  por mais que seus desenvolvedores tentem, não conseguem acompanhar sempre 
+  este processo.
+</p>
+
+<p>
+  Agora, se os navegadores mais atualizados não contemplam totalmente as especificações,
+  imagina suas versões anteriores (que pode ser o que você está usando agora)!
+</p>
+
+<p>
+  Pedimos gentilmente que verifique se seu navegador está atualizado. Estando,
+  poderá usufruir melhor do que a internet, e consequentemente este portal, tem a oferecer.
+</p>
+
+<p>
+  Abaixo segue uma lista dos navegadores mais conhecidos no mercado,
+  com o link para download de suas últimas versões.
+</p>
+
+<div class="row">
+<div class="col-sm-6">
+<h4 id="acessibilidade-navegador-pc">Computadores Pessoais</h4>
+
+<h5>Windows</h5>
+  <ul>
+    <li><a href="https://www.mozilla.org/pt-BR/firefox/new">Mozilla Firefox</a></li>
+    <li><a href="http://www.google.com/chrome">Google Chrome</a></li>
+    <li><a href="http://www.opera.com/download">Opera</a></li>
+    <li><a href="http://windows.microsoft.com/pt-br/internet-explorer/download-ie">Internet Explorer</a></li>
+    <li><a href="https://ssl.apple.com/br/safari/">Safari</a></li>
+  </ul>
+
+  <h5>Linux</h5>
+  <ul>
+    <li><a href="http://support.mozilla.org/pt-BR/kb/instalando-o-firefox-no-linux">Mozilla Firefox</a></li>
+    <li><a href="http://www.google.com/chrome">Google Chrome</a></li>
+    <li><a href="http://www.opera.com/download">Opera</a></li>
+    <li><a href="https://ssl.apple.com/br/safari/">Safari</a></li>
+  </ul>
+
+  <h5>Macintosh</h5>
+  <ul>
+    <li><a href="https://www.mozilla.org/pt-BR/firefox/new">Mozilla Firefox</a></li>
+    <li><a href="http://www.google.com/chrome">Google Chrome</a></li>
+    <li><a href="http://www.opera.com/download">Opera</a></li>
+    <li><a href="https://ssl.apple.com/br/safari/">Safari</a></li>
+  </ul>
+</div>
+
+<div class="col-sm-6">
+<h4 id="acessibilidade-navegador-portateis">Dispositivos portáteis</h4>
+<h5>Android</h5>
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;hl=pt_BR">Mozilla Firefox (Para Android 2.2 ou superior)</a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.android.chrome&amp;hl=pt_BR">Google Chrome Internet Explorer (Para Android 4.0 ou superior)</a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.opera.browser&amp;hl=pt_BR">Opera (Para Android 4.0 ou superior)</a></li>
+  </ul>
+
+  <h5>iPad, iPod, iPhone</h5>
+  <ul>
+    <li>Nenhum link no momento</li>
+  </ul>
+</div>
+</div>
+
+<h3 id="acessibilidade-teclas">Teclas de atalho</h3>
+<p>
+  Atalhos de teclado servem para pular o foco para determinado elemento ou sessão 
+  de uma página.
+</p>
+<p>
+  Deficientes visuais utilizam bastande deste recurso
+  para não terem que ficar escutando uma página por completo toda vez que 
+  entram em alguma.
+</p>
+
+<h4 id="acessibilidade-teclas-disponiveis">Os atalhos de teclado disponíveis neste portal são:</h4>
+<ul>
+  <li>Conteúdo: <kbd>Tecla de Atalho</kbd> + <kbd>1</kbd></li>
+  <li>Menu:   <kbd>Tecla de Atalho</kbd> + <kbd>2</kbd></li>
+</ul>
+<p>
+  A ordem dos atalhos segue a recomendação do
+  do <abbr title="e-MAG">modelo de acessibilidade do governo eletrônico</abbr>.
+  Ou seja, segue a mesma ordem que os portais Federais devem seguir.
+</p>
+
+
+<h4 id="acessibilidade-teclas-tecla">Tecla de atalho</h4>
+<p>
+  A <kbd>tecla de atalho</kbd> não é um padrão entre os navegadores.
+  Consequentemente, existe uma variação entre estes e o sistema operacional que
+  o usuário está utilizando:
+</p>
+
+<ul>
+  <li>
+    Para Windows e Linux
+    <ul>
+      <li><strong>Chrome:</strong>          <kbd>Alt</kbd>   + <kbd>Atalho</kbd></li>
+      <li><strong>Internet Explorer:</strong>     <kbd>Alt</kbd>   + <kbd>Atalho</kbd> + <kbd>Enter</kbd></li>
+      <li><strong>Mozila Firefox e Netscape:</strong> <kbd>Alt</kbd>   + <kbd>Shift</kbd>  + <kbd>Atalho</kbd></li>
+      <li><strong>Opera 12:</strong>          <kbd>Shift</kbd> + <kbd>Esc</kbd>  + <kbd>Atalho</kbd></li>
+      <li><strong>Opera 15 ou superior:</strong>    <kbd>Alt</kbd>   + <kbd>Atalho</kbd></li>
+    </ul>
+  </li>
+
+  <li>
+    Para Macintosh
+    <ul>
+      <li><strong>Google Chrome:</strong>                    <kbd>Ctrl</kbd>  + <kbd>Alt</kbd> + <kbd>Atalho</kbd></li>
+      <li><strong>Internet Explorer, Safari, Mozila Firefox e Netscape:</strong> <kbd>Ctrl</kbd>  + <kbd>Atalho</kbd></li>
+      <li><strong>Opera 12:</strong>                       <kbd>Shift</kbd> + <kbd>Esc</kbd> + <kbd>Atalho</kbd></li>
+      <li><strong>Opera 15 ou superior:</strong>                 <kbd>Alt</kbd>   + <kbd>Atalho</kbd></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Vamos lá! Experimente!</p>
+
+<h3 id="acessibilidade-contraste" class="icomoon iconmoon-adjust">Alto contraste</h3>
+<p>
+  Para pessoas que possuem alguma dificudade visual, dispomos do recurso de Alto contraste. Para habilitá-lo, clique no linka opção <i>Auto contraste</i> localizado na barra de acessibilidade, visualmente disposta no rodapé da página.
+</p>
+
+
+
+
+
+
+      <a href="javascript:void(0)" id="fim-conteudo" class="sr-only">Marcador - Fim do conteúdo</a>
+    </main>
+
+    <h2 id="header-menu" class="sr-only">Menu</h2>
+
+<nav id="menu-pesquisa" class="menu" aria-labelledby="header-pesquisa">
+  <a 
+
+  accesskey=2
+
+  href="javascript:void(0)" id="ini-menu" class="sr-only">
+    Marcador - Início do menu<br>
+</a>
+<a href="#fim-menu" class="sr-only">
+    Pular menu
+</a>
+
+  <h3 id="header-pesquisa" class="sr-only">Pesquisa, conta e carrinho de compras</h3>
+
+  <div class="row">
+    
+<form id="buscar-form" 
+      action="busca" method="get"
+      role="search"
+      class="col-sm-7">
+
+  
+    
+    <label for="busca" class="sr-only">Buscar por:</label>
+
+    
+    <input type="search"
+           id="busca"
+           name="conteudo"
+           
+           accesskey="3"
+           required /><!--
+    --><input id="buscar-botao" type="submit" value="Buscar" />
+  
+
+</form>
+
+    <ul class="lista row col-sm-5">
+      <li class="col-xs-6"><a href="/outros"><span class="sr-only">Acesse sua</span> Conta <span class="sr-only">ou cadastre-se</span></a></li>
+      <li class="col-xs-6"><a href="/outros">Carrinho <span class="sr-only">de compras</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="menu-departamento" class="menu" aria-labelledby="header-departamento">
+  <h3 id="header-departamento" class="sr-only">Departamentos</h3>
+
+  <ul class="row lista">
+    <li class="col-xs"><a href="/perfil">Assistente Virtual</a></li>
+    <li class="col-xs"><a href="/busca">Feminino</a></li>
+    <li class="col-xs"><a href="/busca">Masculino</a></li>
+    <li class="col-xs"><a href="/busca">Infantil</a></li>
+    <li class="col-xs"><a href="/busca">Marcas</a></li>
+    <li class="col-xs"><a href="/busca">Lançamentos</a></li>
+    <li class="col-xs"><a href="/busca">Promoções</a></li>
+  </ul>
+
+  <a href="javascript:void(0)" id="fim-menu" class="sr-only">Marcador - Fim do menu</a>
+</nav>
+    <footer id="informacoes">
+  <h2 class="sr-only">Sobre a loja</h2>
+
+  <ul class="row lista">
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Informações <span class='sr-only'>sobre este <em lang="en">e-commerce</em></span></a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Formas de Pagamento</a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Atendimento <span class='sr-only'>ao usuário</span></a></li>
+  </ul>
+</footer>
+
+    <script src="/javascripts/main.js"></script> 
+  </body>
+</html>

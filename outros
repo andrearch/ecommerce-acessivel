@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>
+      
+        Outros — 
+      
+      Loja da Andrea
+    </title>
+
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/flexboxgrid-6.3.1.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/debug.css' />
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600|Poppins:300|Raleway:300,400" rel="stylesheet"> 
+  </head>
+
+  <body> <!-- class="debug" -->
+    
+    <h1><a href="/">Loja da Andrea</a></h1>
+
+    <aside id="barra_acessibilidade">
+  <a 
+
+  href="javascript:void(0)" id="ini-barra-acessibilidade" class="sr-only">
+    Marcador - Início da barra de acessibilidade<br>
+</a>
+<a href="#fim-barra-acessibilidade" class="sr-only">
+    Pular barra de acessibilidade
+</a>
+  
+  <div class="sr-only">
+    <h2>Barra de Acessibilidade</h2>
+        <h3>Atalhos de acessibilidade</h3>
+        <ul>
+            <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
+            <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
+            <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
+        </ul>
+  </div>
+  
+  <h3 class="sr-only">Outras opções</h3>
+
+  <ul id="menu-acessibilidade" class="row lista">
+    <li class="col-sm-4"><a href="/acessibilidade-usabilidade" class="icomoon iconmoon-wheelchair">Acessibilidade e usabilidade</a></li>
+    <li class="col-sm-4"><a href="/mapa" class="icomoon iconmoon-sitemap">Mapa do <span lang="en">site</span></a></li>
+    <li class="col-sm-4"><a class="icomoon iconmoon-adjust" href="javascript:void(0)" id="contraste">Alto Contraste</a></li>
+  </ul>
+  
+  <a href="javascript:void(0)" id="fim-barra-acessibilidade" class="sr-only">Marcador - Fim da barra de acessibilidade</a>
+</aside>
+
+    <nav id="breadcrumb" aria-labelledby="header-breadcrumb" 
+
+  >
+  <h2 id="header-breadcrumb" class="sr-only">Você está em:</h2>
+
+  <ol class="breadcrumb">
+    
+    <li>
+      
+        <a href="/">
+      
+        Página inicial
+        
+      </a>
+      
+    </li>
+    
+    <li>
+      
+        Outros
+        
+    </li>
+    
+  </ol>
+</nav>
+
+    <main id="outros">
+      <a 
+
+  accesskey=1
+
+  href="javascript:void(0)" id="ini-conteudo" class="sr-only">
+    Marcador - Início do conteúdo<br>
+</a>
+<a href="#fim-conteudo" class="sr-only">
+    Pular conteúdo
+</a>
+
+      <h2>Agradecemos seu interesse</h2>
+
+<p>
+  Este site é um protótipo construído com o intuito de demonstrar técnicas de acessibilidade 
+  aplicadoa à <em lang="en">sites e-commerce</em>.
+</p>
+
+<p>
+  Alguns links vão para esta página. A funcionalidade visitada estava fora do escopo do projeto.
+</p>
+
+<p>
+  Agradecemos sua atenção. Para trocar ideias acerca do projeto, entre em contanto com a autora através do endereço eletrônico: 
+  <a href="mailto:deyach@gmail.com">deyach@gmail.com</a>.
+</p>
+
+
+      <a href="javascript:void(0)" id="fim-conteudo" class="sr-only">Marcador - Fim do conteúdo</a>
+    </main>
+
+    <h2 id="header-menu" class="sr-only">Menu</h2>
+
+<nav id="menu-pesquisa" class="menu" aria-labelledby="header-pesquisa">
+  <a 
+
+  accesskey=2
+
+  href="javascript:void(0)" id="ini-menu" class="sr-only">
+    Marcador - Início do menu<br>
+</a>
+<a href="#fim-menu" class="sr-only">
+    Pular menu
+</a>
+
+  <h3 id="header-pesquisa" class="sr-only">Pesquisa, conta e carrinho de compras</h3>
+
+  <div class="row">
+    
+<form id="buscar-form" 
+      action="busca" method="get"
+      role="search"
+      class="col-sm-7">
+
+  
+    
+    <label for="busca" class="sr-only">Buscar por:</label>
+
+    
+    <input type="search"
+           id="busca"
+           name="conteudo"
+           
+           accesskey="3"
+           required /><!--
+    --><input id="buscar-botao" type="submit" value="Buscar" />
+  
+
+</form>
+
+    <ul class="lista row col-sm-5">
+      <li class="col-xs-6"><a href="/outros"><span class="sr-only">Acesse sua</span> Conta <span class="sr-only">ou cadastre-se</span></a></li>
+      <li class="col-xs-6"><a href="/outros">Carrinho <span class="sr-only">de compras</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="menu-departamento" class="menu" aria-labelledby="header-departamento">
+  <h3 id="header-departamento" class="sr-only">Departamentos</h3>
+
+  <ul class="row lista">
+    <li class="col-xs"><a href="/perfil">Assistente Virtual</a></li>
+    <li class="col-xs"><a href="/busca">Feminino</a></li>
+    <li class="col-xs"><a href="/busca">Masculino</a></li>
+    <li class="col-xs"><a href="/busca">Infantil</a></li>
+    <li class="col-xs"><a href="/busca">Marcas</a></li>
+    <li class="col-xs"><a href="/busca">Lançamentos</a></li>
+    <li class="col-xs"><a href="/busca">Promoções</a></li>
+  </ul>
+
+  <a href="javascript:void(0)" id="fim-menu" class="sr-only">Marcador - Fim do menu</a>
+</nav>
+    <footer id="informacoes">
+  <h2 class="sr-only">Sobre a loja</h2>
+
+  <ul class="row lista">
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Informações <span class='sr-only'>sobre este <em lang="en">e-commerce</em></span></a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Formas de Pagamento</a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Atendimento <span class='sr-only'>ao usuário</span></a></li>
+  </ul>
+</footer>
+
+    <script src="/javascripts/main.js"></script> 
+  </body>
+</html>

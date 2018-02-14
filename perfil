@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>
+      
+        Perfil — 
+      
+      Loja da Andrea
+    </title>
+
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/flexboxgrid-6.3.1.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/debug.css' />
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600|Poppins:300|Raleway:300,400" rel="stylesheet"> 
+  </head>
+
+  <body> <!-- class="debug" -->
+    
+    <h1><a href="/">Loja da Andrea</a></h1>
+
+    <aside id="barra_acessibilidade">
+  <a 
+
+  href="javascript:void(0)" id="ini-barra-acessibilidade" class="sr-only">
+    Marcador - Início da barra de acessibilidade<br>
+</a>
+<a href="#fim-barra-acessibilidade" class="sr-only">
+    Pular barra de acessibilidade
+</a>
+  
+  <div class="sr-only">
+    <h2>Barra de Acessibilidade</h2>
+        <h3>Atalhos de acessibilidade</h3>
+        <ul>
+            <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
+            <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
+            <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
+        </ul>
+  </div>
+  
+  <h3 class="sr-only">Outras opções</h3>
+
+  <ul id="menu-acessibilidade" class="row lista">
+    <li class="col-sm-4"><a href="/acessibilidade-usabilidade" class="icomoon iconmoon-wheelchair">Acessibilidade e usabilidade</a></li>
+    <li class="col-sm-4"><a href="/mapa" class="icomoon iconmoon-sitemap">Mapa do <span lang="en">site</span></a></li>
+    <li class="col-sm-4"><a class="icomoon iconmoon-adjust" href="javascript:void(0)" id="contraste">Alto Contraste</a></li>
+  </ul>
+  
+  <a href="javascript:void(0)" id="fim-barra-acessibilidade" class="sr-only">Marcador - Fim da barra de acessibilidade</a>
+</aside>
+
+    <nav id="breadcrumb" aria-labelledby="header-breadcrumb" 
+
+  >
+  <h2 id="header-breadcrumb" class="sr-only">Você está em:</h2>
+
+  <ol class="breadcrumb">
+    
+    <li>
+      
+        <a href="/">
+      
+        Página inicial
+        
+      </a>
+      
+    </li>
+    
+    <li>
+      
+        Meu Perfil
+        
+    </li>
+    
+  </ol>
+</nav>
+
+    <main id="perfil">
+      <a 
+
+  accesskey=1
+
+  href="javascript:void(0)" id="ini-conteudo" class="sr-only">
+    Marcador - Início do conteúdo<br>
+</a>
+<a href="#fim-conteudo" class="sr-only">
+    Pular conteúdo
+</a>
+
+      <h2>Assistente virtual</h2>
+
+<p>
+  Informe-nos sobre o seu perfil para que possamos listar roupas que melhor se adequem em você.
+</p>
+<p>
+  <strong>Dica:</strong> Ao <a href="/outros">cadastrar-se</a>, armazenaremos o seu perfil para facilitar a busca de peças.
+</p>
+
+<form class="formulario" method="GET" action="/busca-avancada">
+  <fieldset>
+    <legend>Seu perfil</legend>
+
+    <div class="row">
+    <label for="perfil-genero" class="col-sm-3 required">Gênero</label>
+    <select id="perfil-genero" name="perfil-genero" required class="col-sm-3">
+      <option>Masculino</option>
+      <option>Feminino</option>
+    </select>
+    </div>
+
+    <div class="row">
+    <label for="perfil-idade" class="col-sm-3 required">Idade</label>
+    <input type="number" required
+              min="0" max="150"
+              id="perfil-idade" name="perfil-idade"
+              class="col-sm-1" />
+    </div>
+    
+    <div class="row">
+    <label for="perfil-peso" class="col-sm-3 required">Peso</label>
+    <input type="number" required
+            min="3" max="500"
+            id="perfil-peso" name="perfil-peso"
+            aria-describedby="peso-unidade"
+            class="col-sm-1" />
+    <abbr id="perfil-peso-unidade" title="quilogramas" class="col-sm-1">kg</abbr>
+    </div>
+
+    <div class="row">
+    <label for="perfil-altura" class="col-sm-3 required">Altura</label>
+    <input type="number" required
+            min="0.250" max="2.5"
+            step="0.000001"
+            id="perfil-altura" name="perfil-altura"
+            aria-describedby="perfil-altura-unidade"
+            class="col-sm-1" />
+    <abbr id="perfil-altura-unidade" title="metros" class="col-sm-1">m</abbr>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Suas medidas</legend>
+    <p>
+      Caso não saiba suas medidas,
+      <a href="#tamanho-pecas">
+        pule para a 
+        <span role="presentation" aria-hidden="true">próxima</span> seção<!--
+        --><span class="sr-only">tamanhos das suas peças</span><!--
+        --></a>.
+    </p>
+
+    <div class="row">
+      <label for="medida-busto" class="col-sm-3">Busto ou Tórax</label>
+      <input type="number" min="0" max="500" id="medida-busto" name="medida-busto" class="col-sm-1"
+             aria-describedby="medida-busto-unidade" />
+      <abbr id="medida-busto-unidade" title="centímetro" class="col-sm-1">cm</abbr>
+    </div>
+    
+    <div class="row">
+      <label for="medida-cintura" class="col-sm-3">Cintura</label>
+      <input type="number" min="0" max="500" id="medida-cintura" name="medida-cintura" class="col-sm-1"
+             aria-describedby="medida-cintura-unidade" />
+      <abbr id="medida-cintura-unidade" title="centímetro" class="col-sm-1">cm</abbr>
+    </div>
+
+    <div class="row">
+      <label for="medida-quadril" class="col-sm-3">Quadril</label>
+      <input type="number" min="0" max="500" id="medida-quadril" name="medida-quadril" class="col-sm-1"
+             aria-describedby="medida-quadril-unidade" />
+      <abbr id="medida-quadril-unidade" title="centímetro" class="col-sm-1">cm</abbr>
+    </div>
+  </fieldset>
+
+  <fieldset id="tamanho-pecas">
+    <legend>Tamanhos das suas peças</legend>
+    <p>
+      Não sabe suas medidas? Nós te ajudaremos! Quais os tamanhos que geralmente usa?
+    </p>
+
+    <div class="row">
+      <label for="tamanho-blusa" class="col-sm-4">Tamanho da Blusa ou Camisa</label>
+      <input type="number" min="0" max="500" id="tamanho-blusa" name="medida-blusa" class="col-sm-1">
+    </div>
+
+    <div class="row">
+      <label for="tamanho-calca" class="col-sm-4">Tamanho da Calça</label>
+      <input type="number" min="0" max="500" id="tamanho-calca" name="tamanho-calca" class="col-sm-1">
+    </div>
+
+    <div class="row">
+      <label for="tamanho-calcinha" class="col-sm-4">Tamanho da Calcinha ou Cueca</label>
+      <input type="number" min="0" max="500" id="tamanho-calcinha" name="tamanho-calcinha" class="col-sm-1">
+    </div>
+  </fieldset>
+
+  <input type="submit" value="Próximo passo" />
+
+</form>
+
+
+      <a href="javascript:void(0)" id="fim-conteudo" class="sr-only">Marcador - Fim do conteúdo</a>
+    </main>
+
+    <h2 id="header-menu" class="sr-only">Menu</h2>
+
+<nav id="menu-pesquisa" class="menu" aria-labelledby="header-pesquisa">
+  <a 
+
+  accesskey=2
+
+  href="javascript:void(0)" id="ini-menu" class="sr-only">
+    Marcador - Início do menu<br>
+</a>
+<a href="#fim-menu" class="sr-only">
+    Pular menu
+</a>
+
+  <h3 id="header-pesquisa" class="sr-only">Pesquisa, conta e carrinho de compras</h3>
+
+  <div class="row">
+    
+<form id="buscar-form" 
+      action="busca" method="get"
+      role="search"
+      class="col-sm-7">
+
+  
+    
+    <label for="busca" class="sr-only">Buscar por:</label>
+
+    
+    <input type="search"
+           id="busca"
+           name="conteudo"
+           
+           accesskey="3"
+           required /><!--
+    --><input id="buscar-botao" type="submit" value="Buscar" />
+  
+
+</form>
+
+    <ul class="lista row col-sm-5">
+      <li class="col-xs-6"><a href="/outros"><span class="sr-only">Acesse sua</span> Conta <span class="sr-only">ou cadastre-se</span></a></li>
+      <li class="col-xs-6"><a href="/outros">Carrinho <span class="sr-only">de compras</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="menu-departamento" class="menu" aria-labelledby="header-departamento">
+  <h3 id="header-departamento" class="sr-only">Departamentos</h3>
+
+  <ul class="row lista">
+    <li class="col-xs"><a href="/perfil">Assistente Virtual</a></li>
+    <li class="col-xs"><a href="/busca">Feminino</a></li>
+    <li class="col-xs"><a href="/busca">Masculino</a></li>
+    <li class="col-xs"><a href="/busca">Infantil</a></li>
+    <li class="col-xs"><a href="/busca">Marcas</a></li>
+    <li class="col-xs"><a href="/busca">Lançamentos</a></li>
+    <li class="col-xs"><a href="/busca">Promoções</a></li>
+  </ul>
+
+  <a href="javascript:void(0)" id="fim-menu" class="sr-only">Marcador - Fim do menu</a>
+</nav>
+    <footer id="informacoes">
+  <h2 class="sr-only">Sobre a loja</h2>
+
+  <ul class="row lista">
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Informações <span class='sr-only'>sobre este <em lang="en">e-commerce</em></span></a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Formas de Pagamento</a></li>
+    <li class="col-xs-12 col-sm-4"><a href="/outros">Atendimento <span class='sr-only'>ao usuário</span></a></li>
+  </ul>
+</footer>
+
+    <script src="/javascripts/main.js"></script> 
+  </body>
+</html>
