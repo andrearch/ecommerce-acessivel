@@ -5,7 +5,7 @@
 
     <title>
       
-      Loja da Andrea
+      Nome da loja
     </title>
 
     <link rel='stylesheet' href="stylesheets/normalize.css" />
@@ -18,7 +18,7 @@
 
   <body> <!-- class="debug" -->
     
-    <h1><a href="./">Loja da Andrea</a></h1>
+    <h1><a href="./">Nome da loja</a></h1>
 
     <aside id="barra_acessibilidade">
   <a 
@@ -34,6 +34,7 @@
     <h2>Barra de Acessibilidade</h2>
         <h3>Atalhos de acessibilidade</h3>
         <ul>
+            <li><a href="#busca">Assistente Virtual [Atalho de acessibilidade + 4]</a></li>
             <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
             <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
             <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
@@ -102,20 +103,20 @@
   <ul class="row lista">
     <li class="col-xs-12 col-sm-4">
       <a href="busca.html">
-        <img src="images/vestido.jpg" alt="Moleton vermelho Tomato Soup" />
-        <p>Moleton</p>
+        <img role="presentation" aria-hidden="true" src="images/vestido.jpg" alt="Departamento feminino" />
+        <p>Departamento feminino</p>
         </a>
     </li>
     <li class="col-xs-12 col-sm-4">
       <a href="busca.html">
-        <img src="images/terno.jpg" alt="Departamento de ternos" />
-        <p>Ternos</p>
+        <img role="presentation" aria-hidden="true" src="images/terno.jpg" alt="Departamento masculino" />
+        <p>Departamento masculino</p>
       </a>
     </li>
     <li class="col-xs-12 col-sm-4">
       <a href="busca.html">
-        <img src="images/salto-branco.jpg" alt="Salto alto branco agulha" />
-        <p>Salto alto branco bico fino</p>
+        <img role="presentation" aria-hidden="true" src="images/salto-branco.jpg" alt="Calçados" />
+        <p>Calçados</p>
       </a>
     </li>  
   </ul>
@@ -174,7 +175,7 @@
   <h3 id="header-departamento" class="sr-only">Departamentos</h3>
 
   <ul class="row lista">
-    <li class="col-xs"><a href="perfil.html">Assistente Virtual</a></li>
+    <li class="col-xs"><a accesskey="4" href="perfil.html">Assistente Virtual</a></li>
     <li class="col-xs"><a href="busca.html">Feminino</a></li>
     <li class="col-xs"><a href="busca.html">Masculino</a></li>
     <li class="col-xs"><a href="busca.html">Infantil</a></li>

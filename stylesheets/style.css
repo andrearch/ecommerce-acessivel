@@ -182,7 +182,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   background-position: right center;
-  background-image: url(/images/arrow.svg);
+  background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-color: transparent;
@@ -190,7 +190,7 @@ select {
 }
 
 .contraste select {
-  background-image: url(/images/arrow-contraste.svg);
+  background-image: url(../images/arrow-contraste.svg);
 }
 
 kbd {

@@ -7,7 +7,7 @@
       
         Perfil — 
       
-      Loja da Andrea
+      Nome da loja
     </title>
 
     <link rel='stylesheet' href="stylesheets/normalize.css" />
@@ -20,7 +20,7 @@
 
   <body> <!-- class="debug" -->
     
-    <h1><a href="./">Loja da Andrea</a></h1>
+    <h1><a href="./">Nome da loja</a></h1>
 
     <aside id="barra_acessibilidade">
   <a 
@@ -36,6 +36,7 @@
     <h2>Barra de Acessibilidade</h2>
         <h3>Atalhos de acessibilidade</h3>
         <ul>
+            <li><a href="#busca">Assistente Virtual [Atalho de acessibilidade + 4]</a></li>
             <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
             <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
             <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
@@ -107,6 +108,7 @@
     <div class="row">
     <label for="perfil-genero" class="col-sm-3 required">Gênero</label>
     <select id="perfil-genero" name="perfil-genero" required class="col-sm-3">
+      <option>Todas as peças</option>
       <option>Masculino</option>
       <option>Feminino</option>
     </select>
@@ -145,8 +147,7 @@
   <fieldset>
     <legend>Suas medidas</legend>
     <p>
-      Caso não saiba suas medidas,
-      <a href="#tamanho-pecas">
+    <a href="#tamanho-pecas">Caso não saiba suas medidas,
         pule para a 
         <span role="presentation" aria-hidden="true">próxima</span> seção<!--
         --><span class="sr-only">tamanhos das suas peças</span><!--
@@ -183,17 +184,17 @@
 
     <div class="row">
       <label for="tamanho-blusa" class="col-sm-4">Tamanho da Blusa ou Camisa</label>
-      <input type="number" min="0" max="500" id="tamanho-blusa" name="medida-blusa" class="col-sm-1">
+      <input type="text" id="tamanho-blusa" name="medida-blusa" class="col-sm-1">
     </div>
 
     <div class="row">
       <label for="tamanho-calca" class="col-sm-4">Tamanho da Calça</label>
-      <input type="number" min="0" max="500" id="tamanho-calca" name="tamanho-calca" class="col-sm-1">
+      <input type="text" id="tamanho-calca" name="tamanho-calca" class="col-sm-1">
     </div>
 
     <div class="row">
       <label for="tamanho-calcinha" class="col-sm-4">Tamanho da Calcinha ou Cueca</label>
-      <input type="number" min="0" max="500" id="tamanho-calcinha" name="tamanho-calcinha" class="col-sm-1">
+      <input type="text" id="tamanho-calcinha" name="tamanho-calcinha" class="col-sm-1">
     </div>
   </fieldset>
 
@@ -255,7 +256,7 @@
   <h3 id="header-departamento" class="sr-only">Departamentos</h3>
 
   <ul class="row lista">
-    <li class="col-xs"><a href="perfil.html">Assistente Virtual</a></li>
+    <li class="col-xs"><a accesskey="4" href="perfil.html">Assistente Virtual</a></li>
     <li class="col-xs"><a href="busca.html">Feminino</a></li>
     <li class="col-xs"><a href="busca.html">Masculino</a></li>
     <li class="col-xs"><a href="busca.html">Infantil</a></li>
