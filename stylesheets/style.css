@@ -126,6 +126,10 @@ body:not(.debug) .sr-only {
   border: 0;
 }
 
+.not-exists {
+  display: none;
+}
+
 p {
   line-height: 1.5;
 }
@@ -137,7 +141,18 @@ dt {
 
 dd {
   margin: 0;
-  
+}
+
+dt {
+  padding-top: 1em;
+}
+
+dd {
+  padding: .25em;
+}
+
+dt + dd {
+  padding-top: 1em;
 }
 
 table {
@@ -175,7 +190,7 @@ table td {
 }
 
 select {
-  padding-right: 40px; /* Texto não sobrepor seta */
+  padding-right: 40px !important; /* Texto não sobrepor seta */
   text-overflow: ellipsis;
 
   -webkit-appearance: none;
@@ -229,7 +244,8 @@ input[type="number"] {
   text-align: right;
 }
 
-.formulario input[type="submit"] {
+.formulario input[type="submit"],
+.formulario input[type="button"] {
   font-variant: small-caps;
   width: 100%;
   padding: 1em;
@@ -261,6 +277,11 @@ fieldset {
 input[type="radio"] {
   margin: .5em .2em .5em 2em;
   border: 1px solid;
+}
+
+input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
 }
 
 .formulario label,
@@ -663,6 +684,13 @@ blockquote cite {
   grid-area: comprar;
 }
 
+#produto #comprar input[type="submit"],
+#produto #comprar input[type="button"] {
+  font-size: 1.2em;
+  padding: .8em .5em;
+  width: auto;
+}
+
 #produto #sugestoes {
   grid-area: sugestoes;
 }
@@ -691,17 +719,6 @@ blockquote cite {
   font-family: var(--font-header);
 }
 
-#produto dt {
-  padding-top: 1em;
-}
-
-#produto dd {
-  padding: .25em;
-}
-
-#produto dt + dd {
-  padding-top: 1em;
-}
 
 #produto #imagens {
   padding-top: 2em;

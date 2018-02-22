@@ -35,11 +35,23 @@
   <div class="sr-only">
     <h2>Barra de Acessibilidade</h2>
         <h3>Atalhos de acessibilidade</h3>
+        <p>
+          Atalhos de acessibilidade permitem um rápido acesso a áreas do site.
+          <a href="acessibilidade-usabilidade.html">
+            A página Acessibilidade e Usabilidade informa qual a <kbd>Tecla de atalho</kbd> correspondente ao seu computador.
+          </a>
+        </p>
         <ul>
-            <li><a href="#busca">Assistente Virtual [Atalho de acessibilidade + 4]</a></li>
-            <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
-            <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
-            <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
+            <li><a href="#busca">
+              <dl>
+                <dt>Assistente Virtual de compras</dt>
+                <dd>[<kbd>Tecla de atalho</kbd> + <kbd>4</kbd>]</dd>
+                <dd>Uma busca mais precisa para obter peças que se enquadram em suas medidas e ao seu estilo.</dd>
+              </dl>
+            </a></li>
+            <li><a href="#ini-conteudo">Conteúdo [<kbd>Tecla de atalho</kbd> + <kbd>1</kbd>]</a></li>
+            <li><a href="#ini-menu">Menu [<kbd>Tecla de atalho</kbd> + <kbd>2</kbd>]</a></li>
+            <li><a href="#busca">Buscar [<kbd>Tecla de atalho</kbd> + <kbd>3</kbd>]</a></li>
         </ul>
   </div>
   
@@ -112,7 +124,14 @@
     Pular conteúdo
 </a>
 
-      <h2>43 resultados trazidos pelo assistente virtual</h2>
+      <h2>
+  43 resultados trazidos pelo assistente virtual de compras.
+</h2>
+
+<aside class="sr-only">
+  Página <strong>1</strong> de <strong>4</strong>.
+  12 resultados nessa página. 
+</aside>
 
 <ul id="resultados-pecas" class="row lista resultados">
   
@@ -165,6 +184,22 @@
   </li>
   
   <li class="col-sm-3">
+    <a href="produto/calca-jeans-cigarrete.html">
+      <img src="images/produto/calca_jeans_feminina.jpg" role="presentation" aria-hidden="true" />
+      <span class="resultados-titulo">Calça jeans cigarrete</span>
+      <span class="resultados-valor">R$ 60,00</span>
+    </a>
+  </li>
+  
+  <li class="col-sm-3">
+    <a href="produto/saia-evase.html">
+      <img src="images/produto/saia_evase.jpg" role="presentation" aria-hidden="true" />
+      <span class="resultados-titulo">Saia Evase</span>
+      <span class="resultados-valor">R$ 90,00</span>
+    </a>
+  </li>
+  
+  <li class="col-sm-3">
     <a href="produto/blusa-baby-look.html">
       <img src="images/produto/camisa_babylook.jpg" role="presentation" aria-hidden="true" />
       <span class="resultados-titulo">Blusa Baby Look</span>
@@ -173,18 +208,10 @@
   </li>
   
   <li class="col-sm-3">
-    <a href="produto/camiseta-tshirt-masculina.html">
-      <img src="images/produto/camisa_tshirt_masculina.jpg" role="presentation" aria-hidden="true" />
-      <span class="resultados-titulo">Camiseta T-Shirt Masculina</span>
-      <span class="resultados-valor">R$ 25,00</span>
-    </a>
-  </li>
-  
-  <li class="col-sm-3">
-    <a href="produto/calca-jeans-masculina.html">
-      <img src="images/produto/calca_jeans_masculina.jpg" role="presentation" aria-hidden="true" />
-      <span class="resultados-titulo">Calça jeans masculina</span>
-      <span class="resultados-valor">R$ 70,00</span>
+    <a href="produto/saia-evase.html">
+      <img src="images/produto/saia_evase.jpg" role="presentation" aria-hidden="true" />
+      <span class="resultados-titulo">Saia Evase</span>
+      <span class="resultados-valor">R$ 90,00</span>
     </a>
   </li>
   
@@ -193,14 +220,6 @@
       <img src="images/produto/camisa_social.jpg" role="presentation" aria-hidden="true" />
       <span class="resultados-titulo">Camisa Social Masculina Básica</span>
       <span class="resultados-valor">R$ 79,90</span>
-    </a>
-  </li>
-  
-  <li class="col-sm-3">
-    <a href="produto/camiseta-tshirt-masculina.html">
-      <img src="images/produto/camisa_tshirt_masculina.jpg" role="presentation" aria-hidden="true" />
-      <span class="resultados-titulo">Camiseta T-Shirt Masculina</span>
-      <span class="resultados-valor">R$ 25,00</span>
     </a>
   </li>
   
@@ -217,12 +236,12 @@
 <nav class="pagination" role="navigation" aria-label="Pagination" class="row">
   <h3 class="sr-only">Páginas</h3>
 
-  <span class="sr-only">Página <strong>1</strong> de <strong>5</strong></span>
+  <span class="sr-only">Página <strong>1</strong> de <strong>4</strong></span>
 
   <span class="sr-only" aria-disabled="true">Página anterior</span>
   <span><a class="sr-only" href="busca.html">Próxima página</a></span>
   <ul>
-    <li aria-current="true">1</li>
+    <li aria-current="true">1 <span class="sr-only">(página atual)</span></li>
     <li><a href="busca.html">2</a></li>
     <li><a href="busca.html">3</a></li>
     <li><a href="busca.html">4</a></li>
@@ -284,7 +303,10 @@
   <h3 id="header-departamento" class="sr-only">Departamentos</h3>
 
   <ul class="row lista">
-    <li class="col-xs"><a accesskey="4" href="perfil.html">Assistente Virtual</a></li>
+    <li class="col-xs"><a accesskey="4" href="perfil.html">
+      Assistente Virtual <span class="sr-only">de compras:</span>
+      <span class="sr-only">Uma busca mais precisa para obter peças que se enquadram em suas medidas e ao seu estilo</span>
+    </a></li>
     <li class="col-xs"><a href="busca.html">Feminino</a></li>
     <li class="col-xs"><a href="busca.html">Masculino</a></li>
     <li class="col-xs"><a href="busca.html">Infantil</a></li>

@@ -35,11 +35,23 @@
   <div class="sr-only">
     <h2>Barra de Acessibilidade</h2>
         <h3>Atalhos de acessibilidade</h3>
+        <p>
+          Atalhos de acessibilidade permitem um rápido acesso a áreas do site.
+          <a href="../acessibilidade-usabilidade.html">
+            A página Acessibilidade e Usabilidade informa qual a <kbd>Tecla de atalho</kbd> correspondente ao seu computador.
+          </a>
+        </p>
         <ul>
-            <li><a href="#busca">Assistente Virtual [Atalho de acessibilidade + 4]</a></li>
-            <li><a href="#ini-conteudo">Conteúdo [Atalho de acessibilidade + 1]</a></li>
-            <li><a href="#ini-menu">Menu [Atalho de acessibilidade + 2]</a></li>
-            <li><a href="#busca">Buscar [Atalho de acessibilidade + 3]</a></li>
+            <li><a href="#busca">
+              <dl>
+                <dt>Assistente Virtual de compras</dt>
+                <dd>[<kbd>Tecla de atalho</kbd> + <kbd>4</kbd>]</dd>
+                <dd>Uma busca mais precisa para obter peças que se enquadram em suas medidas e ao seu estilo.</dd>
+              </dl>
+            </a></li>
+            <li><a href="#ini-conteudo">Conteúdo [<kbd>Tecla de atalho</kbd> + <kbd>1</kbd>]</a></li>
+            <li><a href="#ini-menu">Menu [<kbd>Tecla de atalho</kbd> + <kbd>2</kbd>]</a></li>
+            <li><a href="#busca">Buscar [<kbd>Tecla de atalho</kbd> + <kbd>3</kbd>]</a></li>
         </ul>
   </div>
   
@@ -374,7 +386,7 @@
   <form action="../agradecimentos.html" class="formulario">
     <div class="row">
       <label for="comprar-tamanho" class="col-sm-3">Tamanho</label>
-      <select id="comprar-tamanho" class="col-sm-5">
+      <select id="comprar-tamanho" class="col-sm-7">
         
           <option>42</option>
         
@@ -387,7 +399,7 @@
 
     <div class="row">
       <label for="comprar-cor" class="col-sm-3">Cor</label>
-      <select id="comprar-cor" class="col-sm-5">
+      <select id="comprar-cor" class="col-sm-7">
         
           <option>Preto</option>
         
@@ -398,7 +410,13 @@
       </select>
     </div>
 
-    <input type="submit" value="Adicionar ao carrinho" />
+    <input type="button" id="adicionar-carrinho" value="Adicionar ao carrinho" />
+    <input type="submit" value="Comprar agora" />
+
+    <a id="peca-adicionada" href="#sugestoes" class="not-exists">
+      Peça adicionada ao carrinho.<br />
+      Temos opções de peças para completar seu visual. Gostaria de conhecê-las?
+    </a>
   </form>
 
   <a href="javascript:void(0)" id="fim-form-compras" class="sr-only">Marcador - Fim do formulário para compra</a>
@@ -501,7 +519,10 @@
   <h3 id="header-departamento" class="sr-only">Departamentos</h3>
 
   <ul class="row lista">
-    <li class="col-xs"><a accesskey="4" href="../perfil.html">Assistente Virtual</a></li>
+    <li class="col-xs"><a accesskey="4" href="../perfil.html">
+      Assistente Virtual <span class="sr-only">de compras:</span>
+      <span class="sr-only">Uma busca mais precisa para obter peças que se enquadram em suas medidas e ao seu estilo</span>
+    </a></li>
     <li class="col-xs"><a href="../busca.html">Feminino</a></li>
     <li class="col-xs"><a href="../busca.html">Masculino</a></li>
     <li class="col-xs"><a href="../busca.html">Infantil</a></li>
